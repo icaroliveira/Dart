@@ -123,6 +123,17 @@ for(int I = 10; I<50; I = I+10){
   print('$I OKs');
 }
 //While comandos
+int energia = 100;
+int energia1= 120;
+while(energia>0){
+  print('Mais uma repetição. Energia restante $energia');
+  energia = energia - 10;
+}
+
+do{
+  print('Faz mais uma repetição. Energia restante $energia1');
+  energia1 = energia1 -6;
+}while(energia1>0);
 
 
 }
