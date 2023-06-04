@@ -129,7 +129,7 @@ while(energia>0){
   print('Mais uma repetição. Energia restante $energia');
   energia = energia - 10;
 }
-
+//While com Do
 do{
   print('Faz mais uma repetição. Energia restante $energia1');
   energia1 = energia1 -6;
