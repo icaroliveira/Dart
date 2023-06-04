@@ -122,7 +122,7 @@ for(int i = 1; i<5; i++){
 for(int I = 10; I<50; I = I+10){
   print('$I OKs');
 }
- 
+//While comandos
 
 
 }
