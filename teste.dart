@@ -94,46 +94,94 @@ void main(){
 
 
   //Condições, If/ Else
-int idade5 = 22;
-int idade6 = 15;
-bool maiorDeIdade;
+  int idade5 = 22;
+  int idade6 = 15;
+  bool maiorDeIdade;
 
-//verificando se a pessoa é maior de idade ou nao
-if (idade5>=18){
+  //verificando se a pessoa é maior de idade ou nao
+  if (idade5>=18){
   maiorDeIdade = true;
-}else{
+  }else{
   maiorDeIdade = false;
-}
-print(maiorDeIdade);
+  }
+  print(maiorDeIdade);
 
-//verificando se a pessoa pode dirigir
-if(idade6>=18){
+  //verificando se a pessoa pode dirigir
+  if(idade6>=18){
   print('Pode dirigir');
-}else{
+  }else{
   print('Nao pode dirigir');
-}
+  }
 
-// For ou loop
+  // usando For
 
-for(int i = 1; i<5; i++){
+  for(int i = 1; i<5; i++){
   print('Conclui $i voltas');
-}
-//exercicio de for
-for(int I = 10; I<50; I = I+10){
+  }
+  //exercicio de for
+  for(int I = 10; I<50; I = I+10){
   print('$I OKs');
-}
-//While comandos
-int energia = 100;
-int energia1= 120;
-while(energia>0){
+  }
+  //usando While
+  int energia = 100;
+  int energia1= 120;
+  while(energia>0){
   print('Mais uma repetição. Energia restante $energia');
   energia = energia - 10;
-}
-//While com Do
-do{
+  }
+  //usando While com Do
+  do{
   print('Faz mais uma repetição. Energia restante $energia1');
   energia1 = energia1 -6;
-}while(energia1>0);
+  }while(energia1>0);
 
+  //usando Break
+  int count = 1;
+
+  while (count <= 10) {
+    print("Geek, voce esta dentro do loop $count");
+    count++;
+
+    if (count == 4) {
+      break;
+    }
+  }
+  print("Geek, voce esta fora do loop");
+
+  //Usando Break e Do
+  int count1 = 1;
+
+  do {
+    print("Geek, voce esta dentro do loop $count1");
+    count1++;
+
+    if (count1 == 5) {
+      break;
+    }
+  } while (count1 <= 10);
+  print("Geek, voce esta fora do loop");
+
+  //Usando Continue
+  int count2 = 0;
+
+  while (count2 <= 10) {
+    count2++;
+
+    if (count2 == 4) {
+      print("O número 4 é ignorado");
+      continue;
+    }
+
+    print("Geek, voce esta dentro do loop $count2");
+  }
+
+  print("Geek, voce esta fora do loop loop");
+  /*
+  Explicação:Aqui, o fluxo de controle do loop será suave, mas quando o valor de
+  contagem se torna 4, a condição if se torna verdadeira e a instrução abaixo é
+  ignorada por causa da continuação e da próxima iteração pulando o número 4.
+   */
+
+  //Switch e Case
 
 }
