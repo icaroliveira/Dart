@@ -13,3 +13,4 @@
 - `For`: Função que permite a criação de loops de repetição com limite definido. 
 - `While`: Função que permite a criação de llops de repetição sem limite definido.
 - `Break`: Uma instrução que permite interromper a execução de um loop ou de um switch
+- `Continue`: É usada em loops para pular a iteração atual e ir para a próxima iteração do loop. 
