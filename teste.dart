@@ -193,6 +193,32 @@ usando o comando opcional do{}while() que é composto por 4 partes:
   } while (count1 <= 10);
   print("Geek, voce esta fora do loop");
 
+
+  //Exercicio e Explicação
+/*
+Em Dart, o "break" é uma instrução que permite interromper a execução de um loop ou de um switch (caso).
+Já o "do" é uma estrutura de controle que executa um bloco de código repetidamente enquanto uma determinada condição é verdadeira.
+A combinação do "break" com "do" é utilizada para criar um loop que executa pelo menos uma vez e permite sair desse loop com base em uma condição.
+Aqui está um exemplo simples:
+ */
+
+/*
+  do {
+    // Código a ser executado
+    if (condicao) {
+      break; // Sai do loop se a condição for verdadeira
+    }
+  } while (true);
+*/
+
+/*
+Neste exemplo, o bloco de código dentro do "do" será executado pelo menos uma vez.
+Se a condição especificada no "if" for verdadeira, a instrução "break" será acionada, interrompendo o loop.
+Essa combinação de "break" com "do" é útil quando você precisa executar um bloco de código pelo menos uma vez e,
+em seguida, sair do loop com base em uma condição específica.
+ */
+
+
   //Usando Continue
   int count2 = 0;
 
