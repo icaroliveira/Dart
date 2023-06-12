@@ -1,4 +1,4 @@
-void main(){
+void main() {
   // Strings
   String nome = 'ícaro';
   String sobrenome = 'rangel';
@@ -15,17 +15,16 @@ void main(){
   bool geek = true;
 
   //interpolacao de strings
-  String apresentacao =  'Meu nome é $nome $sobrenome,\n'
+  String apresentacao = 'Meu nome é $nome $sobrenome,\n'
       'Tenho $idade anos de idade,\n'
       'Tenho $altura de altura e peso $peso kg. \n'
       'Eu curto o universo geek? $geek ';
 
   print(nome);
-  print(idade+idade1);
+  print(idade + idade1);
   print(altura);
   print(geek);
   print(apresentacao);
-
 
   //Alteracao de valores de uma string, int ou boleano
   String jogo = 'god of war';
@@ -41,7 +40,7 @@ void main(){
   print(mileniano);
 
   //Lista de tipo unico
-  List<String> nomes = ['icaro','guilherme', 'nicolas', 'matheus', 'rafael'];
+  List<String> nomes = ['icaro', 'guilherme', 'nicolas', 'matheus', 'rafael'];
 
   //chamando todos os nomes
   print(nomes);
@@ -50,7 +49,7 @@ void main(){
   print(nomes[2]);
 
   //Listas Dinamicas com objetos ja criados
-  List<dynamic> familia =[nome, sobrenome, idade, altura, peso, geek];
+  List<dynamic> familia = [nome, sobrenome, idade, altura, peso, geek];
 
   //chamando o objeto inteiro
   print(familia);
@@ -73,9 +72,6 @@ void main(){
 
   //Var ou Variaveis
 
-
-
-
   //Exercicio
   String pessoa = 'nicolas';
   String apelido1 = 'Sei la';
@@ -84,14 +80,15 @@ void main(){
   double peso1 = 60.0;
   double altura1 = 1.69;
 
-  List<dynamic> eu =['Meu nome é $pessoa \n'
-      'Mais conhecido como $apelido1\n'
-      'Tenho $idade3 anos de idade\n'
-      'Sou pardo, cabelos e olhos negros\n'
-      'Tenho $altura1 de altura e peso $peso1 kilos\n'
-      'Amos a cultura geek? $geek1'];
+  List<dynamic> eu = [
+    'Meu nome é $pessoa \n'
+        'Mais conhecido como $apelido1\n'
+        'Tenho $idade3 anos de idade\n'
+        'Sou pardo, cabelos e olhos negros\n'
+        'Tenho $altura1 de altura e peso $peso1 kilos\n'
+        'Amos a cultura geek? $geek1'
+  ];
   print(eu);
-
 
   //Condições, If/ Else
   int idade5 = 22;
@@ -99,18 +96,18 @@ void main(){
   bool maiorDeIdade;
 
   //verificando se a pessoa é maior de idade ou nao
-  if (idade5>=18){
-  maiorDeIdade = true;
-  }else{
-  maiorDeIdade = false;
+  if (idade5 >= 18) {
+    maiorDeIdade = true;
+  } else {
+    maiorDeIdade = false;
   }
   print(maiorDeIdade);
 
   //verificando se a pessoa pode dirigir
-  if(idade6>=18){
-  print('Pode dirigir');
-  }else{
-  print('Nao pode dirigir');
+  if (idade6 >= 18) {
+    print('Pode dirigir');
+  } else {
+    print('Nao pode dirigir');
   }
 
   /*
@@ -123,12 +120,12 @@ Por fim, o {} é onde escrevemos nossas ações que só ocorrerão se a condiç�
 
   // usando For
 
-  for(int i = 1; i<5; i++){
-  print('Conclui $i voltas');
+  for (int i = 1; i < 5; i++) {
+    print('Conclui $i voltas');
   }
   //exercicio de for
-  for(int I = 10; I<50; I = I+10){
-  print('$I OKs');
+  for (int I = 10; I < 50; I = I + 10) {
+    print('$I OKs');
   }
 
   /*
@@ -144,16 +141,16 @@ O pós-loop é a ação que será tomada no final da repetição, normalmente é
 
   //usando While
   int energia = 100;
-  int energia1= 120;
-  while(energia>0){
-  print('Mais uma repetição. Energia restante $energia');
-  energia = energia - 10;
+  int energia1 = 120;
+  while (energia > 0) {
+    print('Mais uma repetição. Energia restante $energia');
+    energia = energia - 10;
   }
   //usando While com Do
-  do{
-  print('Faz mais uma repetição. Energia restante $energia1');
-  energia1 = energia1 -6;
-  }while(energia1>0);
+  do {
+    print('Faz mais uma repetição. Energia restante $energia1');
+    energia1 = energia1 - 6;
+  } while (energia1 > 0);
 /*
 Repetições com: While
 Quando precisamos criar repetições, mas não temos certezas das quantidades de repetições necessárias, usamos o while(){},
@@ -169,6 +166,7 @@ usando o comando opcional do{}while() que é composto por 4 partes:
 "while" que é o comando para começar a lógica de condição;
 ()que é onde vamos colocar a condição booleana.
  */
+
   //usando Break
   int count = 1;
 
@@ -215,8 +213,4 @@ usando o comando opcional do{}while() que é composto por 4 partes:
   contagem se torna 4, a condição if se torna verdadeira e a instrução abaixo é
   ignorada por causa da continuação e da próxima iteração pulando o número 4.
    */
-
-  //Switch e Case
-
-
 }
