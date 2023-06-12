@@ -113,6 +113,14 @@ void main(){
   print('Nao pode dirigir');
   }
 
+  /*
+Condições com: If/Else
+Quando queremos uma condição no nosso código, podemos usar o if(){} e o else{}. Dentro da estrutura do nosso código, temos 3 partes:if/else () {}.
+O if/else é necessário para inicializar a lógica de comparação.
+Já o () é onde adicionamos nossa condição, que deve sempre ser um resultado verdadeiro ou falso (booleano).
+Por fim, o {} é onde escrevemos nossas ações que só ocorrerão se a condição tiver sido verdadeira.
+   */
+
   // usando For
 
   for(int i = 1; i<5; i++){
@@ -122,6 +130,18 @@ void main(){
   for(int I = 10; I<50; I = I+10){
   print('$I OKs');
   }
+
+  /*
+Repetições com: For
+Aprendemos que, em alguns momentos, é interessante criar repetições dentro do nosso código, e podemos controlar
+essas repetições usando o for(){}, que é composto por 3 partes principais:
+O For é o comando usado para iniciar o loop.
+O () é onde vamos definir nossas condições, e é dividido em 3 sub-partes: inicialização, condição, pós-loop.
+Onde a inicialização é responsável pela criação da variável condicional inicial (int i = 0).
+A condição é responsável por comparar a variável inicial com a nossa lógica desejada (i < 10).
+O pós-loop é a ação que será tomada no final da repetição, normalmente é usada para incrementar a variável inicial (i++).
+   */
+
   //usando While
   int energia = 100;
   int energia1= 120;
@@ -134,7 +154,21 @@ void main(){
   print('Faz mais uma repetição. Energia restante $energia1');
   energia1 = energia1 -6;
   }while(energia1>0);
+/*
+Repetições com: While
+Quando precisamos criar repetições, mas não temos certezas das quantidades de repetições necessárias, usamos o while(){},
+que consiste em 3 partes:
+"While" que é o comando para começar a lógica de repetição;
+()que é onde vamos colocar a condição booleana;
+{} local designado para as ações que serão repetidas.
 
+Porém, o while tem um bônus que é poder escolher se a condição será analisada antes ou depois da repetição,
+usando o comando opcional do{}while() que é composto por 4 partes:
+"Do" que é o comando para começar a lógica de repetição;
+{} local designado para as ações que serão repetidas;
+"while" que é o comando para começar a lógica de condição;
+()que é onde vamos colocar a condição booleana.
+ */
   //usando Break
   int count = 1;
 
@@ -183,5 +217,6 @@ void main(){
    */
 
   //Switch e Case
+
 
 }
